@@ -149,12 +149,6 @@ const pintarCarrito = () => {
     finalizaCompra.innerText = 'finalizar compra';
     finalizaCompra.addEventListener('click', () => {
         modalContainer.style.display = 'none'
-        function multiple(valor, multiplo) {
-            resto = valor % multiplo;
-            if (resto == 0) return true;
-            else return false;
-        }
-        
         Swal.fire(
             'Gracias por su compra!',
             '',
