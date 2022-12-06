@@ -1,0 +1,86 @@
+[
+    {
+        "id": 1,
+        "reloj": " reloj",
+        "img": " https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxjlFw1cn_bFHMdNcWGNA2STPnXzpFbKTmfg&usqp=CAU",
+        "precio": 50000,
+        "cantidad": 1
+    },
+    {
+        "id": 2,
+        "reloj": " reloj",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKwxwAsSuiOPXzH6pStOubZBzdqW3tTnN9ew&usqp=CAU",
+        "precio": 60000,
+        "cantidad": 1
+    },
+    {
+        "id": 3,
+        "reloj": " reloj",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTs4UTD0-eVt3NKk-H03if25Ahhbf2-KRLmPg&usqp=CAU  ",
+        "precio": 70500,
+        "cantidad": 1
+    },
+    {
+        "id": 4,
+        "reloj": " reloj",
+        "img": " https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9fja2g6PwZI3QGZ01u0o0IA28HNcZYJCw4w&usqp=CAU",
+        "precio": 15000,
+        "cantidad": 1
+    },
+    {
+        "id": 5,
+        "reloj": " reloj",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcaX9exteB7kQNPFLlLwL6MYx659d-6M13lKX2mspsWp2qAmlk6_yu26BXn84a8W5whFM&usqp=CAU",
+        "precio": 16000,
+        "cantidad": 1
+    },
+    {
+        "id": 6,
+        "reloj": " reloj",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQL39OWEz6CVUQl5djClTaPsNdwbzeZt5otgw&usqp=CAU",
+        "precio": 17500,
+        "cantidad": 1
+    },
+    {
+        "id": 7,
+        "reloj": " reloj",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSm4-IFcf3ZNEZ3mWmBxacXesDiymi7CjWRpg&usqp=CAU ",
+        "precio": 50000,
+        "cantidad": 1
+    },
+    {
+        "id": 8,
+        "reloj": " reloj",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKwxwAsSuiOPXzH6pStOubZBzdqW3tTnN9ew&usqp=CAU",
+        "precio": 60000,
+        "cantidad": 1
+    },
+    {
+        "id": 9,
+        "reloj": " reloj",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRd31G5S-0lAe5nsJbdTFT4veBTLCooEZ9URA&usqp=CAU ",
+        "precio": 70500,
+        "cantidad": 1
+    },
+    {
+        "id": 10,
+        "reloj": " reloj",
+        "img": " https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9fja2g6PwZI3QGZ01u0o0IA28HNcZYJCw4w&usqp=CAU",
+        "precio": 15000,
+        "cantidad": 1
+    },
+    {
+        "id": 11,
+        "reloj": " reloj",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTo0aVc31I1YTXM2wEXQAKv0zpV4pGpuMWQDQ&usqp=CAU",
+        "precio": 16000,
+        "cantidad": 1
+    },
+    {
+        "id": 12,
+        "reloj": " reloj",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ17EspRaZC0_3W3fPXEPn4O2S82bA7hISNWg&usqp=CAU",
+        "precio": 17500,
+        "cantidad": 1
+    }
+]
