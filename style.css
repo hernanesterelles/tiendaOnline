@@ -4,12 +4,55 @@ body{
     margin:0;
     
 }
+.tienda{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    background-color: rgb(55, 56, 56);
+}
+.ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    font-size: 30px;
+    font-weight: 400;
+    
+}
+#mujer, #hombre{
+    background-color: transparent; 
+    color: rgb(243, 225, 225);
+    cursor: pointer;
+    border-radius: 5%;
+    box-shadow:4px rgb(252, 232, 232);
+    width: 200px;
+    height: 50px;
+    font-family: 'Rubik', sans-serif;
+    justify-content: center;
+   }
+
+
+aside {
+    padding: 2rem;
+    padding-right: 0;
+    color: var(--clr-white);
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    padding: 2rem;
+    padding-right: 0;
+}
 .cadena{
-    background-color: rgb(90, 1, 192);
-    color: white;
+    background-color: transparent;
+    color: rgb(248, 248, 248);
     font-size: 50px;
     text-align: center;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Rubik', sans-serif;
 
 }
 .car{
@@ -17,7 +60,7 @@ body{
     justify-content: end;
 }
 #ver-carrito{       
-    width: 70px;
+   color: aliceblue;
     cursor: pointer;
 }
 img{
@@ -70,7 +113,7 @@ img{
 }
 #modal-container{   
     width: 50%;
-    margin: 0 25%;
+    margin: 0 6%;
     max-height: 88vh;
     color: rgb(17, 17, 17); 
     background-color: rgb(227, 240, 235);
@@ -136,11 +179,11 @@ color: white;
     background-color: rgb(255, 0, 85);
     color: rgb(249, 249, 250);
     border-radius: 30%;
-    font-size: 12px;
-    padding:4px;
-    top: 130px;
-    right: 53px;
-    position: absolute;
+    font-size: 15px;
+    text-align: center;
+    top: 5px;
+    width: 15px;
+    height: 20px;        
     display: none;
 }
 .sumar{

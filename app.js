@@ -16,10 +16,10 @@ const classcontainer = document.querySelector('#classcontainer')
 const verCarrito = document.getElementById('ver-carrito')
 const modalContainer = document.getElementById('modal-container')
 const cantidadCarrito = document.getElementById('cantidadCarrito')
-const volverCarrito =document.getElementById('volverCarrito')
 
 
-modalContainer.append(volverCarrito)
+
+
 
 
 //  aca cree la nueva card con un boton de agregar al carrito  y use append para agregarlo  a mi container
@@ -62,12 +62,11 @@ relojArrays.forEach((relojArrays) => {
             carritoCouter();
             savelocal();
         }
-
-
     })
 
 })
 }
+ 
 //carrito
 const pintarCarrito = () => {
     modalContainer.innerHTML = '';
@@ -133,7 +132,7 @@ const pintarCarrito = () => {
 
         eliminar.addEventListener('click', eliminarProducto);
     });
-
+//aca  use el metodo reduce para calcular el total del precio del carrito y el  acumulador para hacer el precio por la cantidad
     const total = carrito.reduce((acc, el) => acc + el.precio * el.cantidad, 0);
 
 
@@ -146,11 +145,9 @@ const pintarCarrito = () => {
     
    `;   
 
-    modalContainer.append(totalReloj); 
+    modalContainer.append(totalReloj);    
 
-   
-
-
+//aca le di eventos a los botones vaciar carrito y a finalizar compra  le di una condicion por si el carrito tenia un producto o si estaba vacio 
     const finalizaCompra = totalReloj.querySelector('.finalizarCompra');
     finalizaCompra.className = 'finalizarCompra';
     finalizaCompra.innerText = 'finalizar compra';
