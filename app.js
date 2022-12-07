@@ -16,11 +16,13 @@ const classcontainer = document.querySelector('#classcontainer')
 const verCarrito = document.getElementById('ver-carrito')
 const modalContainer = document.getElementById('modal-container')
 const cantidadCarrito = document.getElementById('cantidadCarrito')
-const vaciarCarrito = document.getElementById('#vaciarCarrito')
+const volverCarrito =document.getElementById('volverCarrito')
 
 
+modalContainer.append(volverCarrito)
 
 
+//  aca cree la nueva card con un boton de agregar al carrito  y use append para agregarlo  a mi container
 const renderizarreloj =() =>{
 relojArrays.forEach((relojArrays) => {
     const nuevaCard = document.createElement('div')
@@ -138,28 +140,51 @@ const pintarCarrito = () => {
     const totalReloj = document.createElement('div')
     totalReloj.className = 'total-content'
     totalReloj.innerHTML = `total a pagar: ${total} $ 
-    
+    <button class="vaciarCarrito"> vaciar carrito</button>
+    <button class="finalizarCompra"> finalizar Compra</button>
+
     
    `;   
 
     modalContainer.append(totalReloj); 
 
-    const finalizaCompra = document.createElement('button');
+   
+
+
+    const finalizaCompra = totalReloj.querySelector('.finalizarCompra');
     finalizaCompra.className = 'finalizarCompra';
     finalizaCompra.innerText = 'finalizar compra';
-    finalizaCompra.addEventListener('click', () => {
-        modalContainer.style.display = 'none'
+    finalizaCompra.addEventListener('click', () => {          
+        if(carrito.length === 0){
+            Swal.fire({
+                title: "¡Tu carrito está vacio!",
+                text: "Compra algo para continuar con la compra",
+                icon: "error",
+                confirmButtonText: "Aceptar",
+              });  
+        }else{
         Swal.fire(
             'Gracias por su compra!',
             '',
             'success'
-          )
+          )}
+          
     });
-    totalReloj.append(finalizaCompra)
-   
+    modalContainer.append(finalizaCompra) 
 
-   
-    }
+    const vaciarCarrito = totalReloj.querySelector('.vaciarCarrito');
+    vaciarCarrito.className =  'vaciarCarrito';
+    vaciarCarrito.innerText =' vaciar carrito'
+    vaciarCarrito.addEventListener('click',() => {
+        carrito.length = []
+        savelocal()               
+        pintarCarrito()   
+        
+       
+        })  
+        
+        modalContainer.append(vaciarCarrito)
+    }    
 
 verCarrito.addEventListener('click', pintarCarrito)
 const eliminarProducto = () => {
